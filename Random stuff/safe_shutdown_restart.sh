@@ -7,9 +7,6 @@
 
 set -e
 
-#!/bin/bash
-set -e
-
 # Check that the script is run as root
 if [[ $EUID -ne 0 ]]; then
   echo "Run this script as root or with sudo."

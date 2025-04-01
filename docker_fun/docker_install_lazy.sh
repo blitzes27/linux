@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script installs Docker on Linux Ubuntu
+# This script installs Docker on Ubuntu
 
 set -e
 # Remove conflicting packages

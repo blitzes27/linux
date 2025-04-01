@@ -11,3 +11,4 @@ apt install unzip -y
 apt install zip -y
 apt install rsync -y
 apt install git -y
+apt install nfs-common -y

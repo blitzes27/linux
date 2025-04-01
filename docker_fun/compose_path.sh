@@ -10,6 +10,9 @@
 
 # To see your docker path use “which docker”
 
+# To be clear, after this script is run you can use the command "compose" with all the docker compose commands in any directory.
+# like, compose up -d, compose down, compose ps etc.
+
 
 
 

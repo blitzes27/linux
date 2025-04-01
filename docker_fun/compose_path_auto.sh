@@ -10,6 +10,9 @@
 # It will create a script in /usr/local/bin/compose which will run docker compose with the specified paths.
 # This script is intended for Linux systems.
 
+# To be clear, after this script is run you can use the command "compose" with all the docker compose commands in any directory.
+# like, compose up -d, compose down, compose ps etc.
+
 
 # Ask user for docker path
 read -p "Enter the full path to the 'docker' executable (leave blank to auto-detect): " docker_path

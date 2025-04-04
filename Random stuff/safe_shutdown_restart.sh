@@ -35,7 +35,7 @@ EOF
 chmod +x /usr/local/bin/reboot1
 
 # Add to crontab
-cron_line="@reboot root /usr/bin/docker compose -f $COMPOSE_FILE up -d"
+cron_line="@reboot root sleep 15 && /usr/bin/docker compose -f $COMPOSE_FILE up -d"
 if ! grep -qF "$cron_line" /etc/crontab; then
   echo "$cron_line" >> /etc/crontab
 fi

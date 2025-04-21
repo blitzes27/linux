@@ -25,3 +25,6 @@ Custom Oh My Bash configuration with:
 	•	Configurable update checks, colors, titles, history timestamps, etc.
 
 	
+# Install commands can be viewed on Notion site below #
+
+## https://peaceful-yard-05b.notion.site/Bash-git-1dc0af5faea58053b10fe0aeb56a539f?pvs=4 ##

@@ -32,7 +32,5 @@ Custom Oh My Bash configuration with:
 ## To auto install the plastic operation of your bash shell please run ##
 
 <pre>
-```bash
 cd ~ && bash -c "$(curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/interior_terminal_decoration/auto_install.sh)"
-```
 </pre>

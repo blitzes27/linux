@@ -152,5 +152,6 @@ alias cd="z"
 alias ls="ls -a --color=auto"
 alias ls1="ls -lahtr --color=auto"
 alias cat="batcat"
+
 # Add this line at the end of .bashrc:
 [[ ! ${BLE_VERSION-} ]] || ble-attach

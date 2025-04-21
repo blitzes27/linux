@@ -25,7 +25,7 @@ sudo apt install make -y
 cd "$HOME/ble.sh" && make
 
 echo "Downloading new .bashrc from GitHub"
-curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/interior_terminal_decoration/.bashrc \
+curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/terminal_plastic_operation/.bashrc \
   -o "$HOME/.bashrc"
 
 echo "🔧 checking if ~/.local/bin is in your PATH"

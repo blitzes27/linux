@@ -33,5 +33,5 @@ Custom Oh My Bash configuration with:
 ### ⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️	⚠️ Dont use sudo ⚠️	⚠️ Dont use sudo ⚠️	⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️	⚠️ Dont use sudo ⚠️ ###
 
 ```bash
-cd ~ && bash -c "$(curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/interior_terminal_decoration/auto_install.sh)"
+cd ~ && bash -c "$(curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/terminal_plastic_operation/auto_install.sh"
 

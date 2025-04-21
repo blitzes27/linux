@@ -28,3 +28,11 @@ Custom Oh My Bash configuration with:
 # Install commands can be viewed on Notion site below #
 
 ## https://peaceful-yard-05b.notion.site/Bash-git-1dc0af5faea58053b10fe0aeb56a539f?pvs=4 ##
+
+## To auto install the plastic operation of your bash shell please run ##
+
+<pre>
+```bash
+cd ~ && bash -c "$(curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/interior_terminal_decoration/auto_install.sh)"
+```
+</pre>

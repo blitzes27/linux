@@ -36,7 +36,7 @@ fi
 echo "Installing bat via apt (requires sudo)"
 sudo apt install -y bat
 
-source "$HOME/.bashrc"
+
 echo "Terminals plastic operation complete."
 echo "check the bashrc file for your new aliases"
 echo "You can now use the following commands:"
@@ -44,3 +44,5 @@ echo "  - ls: ls -a --color=auto"
 echo "  - ls1: ls -lahtr --color=auto"
 echo "  - cat: batcat"
 echo "  - cd: z"
+echo "  - dont forget to source your .bashrc file. COMMAND = source ~/.bashrc"
+echo "  - or restart your terminal"

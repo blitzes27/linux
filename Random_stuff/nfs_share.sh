@@ -4,7 +4,7 @@ set -e
 # IP address of the NFS server
 # NFS_IP="NEED_TO_BE_SET"
 # Path to the NFS share on the server
-# NFS_PATH="NFS_MOUNT_POINT
+# NFS_PATH="NFS_MOUNT_POINT"
 # Mount point on the local machine
 # nfs_mount_point="/mnt/data"
 # install nfs-common package

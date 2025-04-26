@@ -1,19 +1,19 @@
 #!/bin/bash
-# This script mounts an NFS share on Ubuntu server
+# This script mounts an NFS share on Ubuntu serverecho "Dont forget to source ~/.bashrc"
 set -e
 # IP address of the NFS server
-nfs_ip="192.168.20.5"
+# NFS_IP="NEED_TO_BE_SET"
 # Path to the NFS share on the server
-nfs_path="/volume7/data"
+# NFS_PATH="NFS_MOUNT_POINT
 # Mount point on the local machine
-nfs_mount_point="/mnt/data"
+# nfs_mount_point="/mnt/data"
 # install nfs-common package
 apt update
 apt install nfs-common -y
 # Create the mount point directory if it doesn't exist
 mkdir -p /mnt/data
 # Mount the NFS share
-echo "$nfs_ip:$nfs_path $nfs_mount_point nfs defaults 0 0" | tee -a /etc/fstab > /dev/null
+echo "$NFS_IP:$NFS_PATH $NFS_MOUNT_POINT nfs defaults 0 0" | tee -a /etc/fstab > /dev/null
 
 # mount the NFS share
 mount -a

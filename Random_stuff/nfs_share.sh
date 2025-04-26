@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script mounts an NFS share on Ubuntu serverecho "Dont forget to source ~/.bashrc"
+# This script mounts an NFS share on Ubuntu
 set -e
 # IP address of the NFS server
 # NFS_IP="NEED_TO_BE_SET"

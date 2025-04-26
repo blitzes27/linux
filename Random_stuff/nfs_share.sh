@@ -14,9 +14,9 @@ apt install nfs-common -y
 mkdir -p /mnt/data
 # Mount the NFS share
 echo "$NFS_IP:$NFS_PATH $NFS_MOUNT_POINT nfs defaults 0 0" | tee -a /etc/fstab > /dev/null
-# reload fstab to apply changes
-systemctl daemon-reload
+
 # mount the NFS share
 mount -a
 # veriify the mount
 ls $nfs_mount_point
+echo "reload fstab: sudo systemctl daemon-reload"

@@ -32,3 +32,12 @@ docker run hello-world
 # Add your user to the docker group
 usermod -aG docker "${SUDO_USER:-$USER}"
 
+# Create a directory for docker-compose
+mkdir -p /docker/appdata
+
+# create a docker-compose.yml file
+touch /docker/appdata/docker-compose.yml
+
+# set ownership of the docker directory
+chown -R "${SUDO_USER:-$USER}:docker" /docker
+

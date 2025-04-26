@@ -18,5 +18,5 @@ echo "$NFS_IP:$NFS_PATH $NFS_MOUNT_POINT nfs defaults 0 0" | tee -a /etc/fstab >
 # mount the NFS share
 mount -a
 # veriify the mount
-ls $nfs_mount_point
+ls $NFS_MOUNT_POINT
 echo "reload fstab: sudo systemctl daemon-reload"

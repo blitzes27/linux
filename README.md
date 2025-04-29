@@ -105,7 +105,7 @@ Enhances SSH server security by:
 
 ## 6. auto_install.sh ##
 
-Automates the installation terminal enhancements making auto completation available and nice looking layout.
+Automates the installation of terminal enhancements, making auto completion working with many more enhancements.
 
 ⸻
 

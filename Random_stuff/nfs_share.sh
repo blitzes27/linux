@@ -11,7 +11,7 @@ set -e
 apt update
 apt install nfs-common -y
 # Create the mount point directory if it doesn't exist
-mkdir -p /mnt/data
+mkdir -p $NFS_MOUNT_POINT
 # Mount the NFS share
 echo "$NFS_IP:$NFS_PATH $NFS_MOUNT_POINT nfs defaults 0 0" | tee -a /etc/fstab > /dev/null
 

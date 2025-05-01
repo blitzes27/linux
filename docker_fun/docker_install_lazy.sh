@@ -40,4 +40,5 @@ touch /docker/appdata/docker-compose.yml
 
 # set ownership of the docker directory
 chown -R "${SUDO_USER:-$USER}:docker" /docker
+echo "docker_fun/docker_install_lazy.sh sucessfull"
 

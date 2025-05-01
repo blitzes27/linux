@@ -8,3 +8,4 @@ sed -i \
 -e 's/^#PasswordAuthentication yes/PasswordAuthentication no/' \
 /etc/ssh/sshd_config
 systemctl restart ssh
+echo "Security/ssh_security.sh sucessfull"

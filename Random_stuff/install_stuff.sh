@@ -12,3 +12,4 @@ apt install zip -y
 apt install rsync -y
 apt install git -y
 apt install nfs-common -y
+echo "Random_stuff/install_stuff.sh sucessfull"

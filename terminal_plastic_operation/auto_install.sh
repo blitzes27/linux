@@ -37,7 +37,7 @@ echo "Installing bat via apt (requires sudo)"
 sudo apt install -y bat
 
 
-echo "Terminals plastic operation complete."
+echo "terminal_plastic_operation/auto_install.sh sucessfull"
 echo "check the bashrc file for your new aliases"
 echo "You can now use the following commands:"
 echo "  - ls: ls -a --color=auto"

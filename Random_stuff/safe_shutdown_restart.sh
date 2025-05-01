@@ -40,4 +40,4 @@ if ! grep -qF "$cron_line" /etc/crontab; then
   echo "$cron_line" >> /etc/crontab
 fi
 
-echo "Done."
+echo "Random_stuff/safe_shutdown_restart.sh sucessfull"

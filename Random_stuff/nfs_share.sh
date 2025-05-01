@@ -20,3 +20,7 @@ mount -a
 # veriify the mount
 ls $NFS_MOUNT_POINT
 echo "reload fstab: sudo systemctl daemon-reload"
+echo "NFS share mounted at $NFS_MOUNT_POINT"
+echo "NFS_IP: $NFS_IP"
+echo "NFS_PATH: $NFS_PATH"
+echo "Random_stuff/nfs_share.sh sucessfull"

@@ -15,3 +15,4 @@ EOF
 # Restart systemd-logind to apply changes
 systemctl restart systemd-logind
 echo "Torture started"
+echo "Random_stuff/sleep_torture.sh sucessfull"

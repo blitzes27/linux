@@ -1,8 +1,8 @@
 #!/bin/bash
-# This script creates commands/files power1 and reboot1. It puts the files in a folder that is in the path. It means that power1 and reboot1 can be run in a terminal and it will execute the script.
-
+# This script creates power1 and reboot1 commands and configures sudoers
+# so that these two scripts can be run without a password.
+# A direct "shutdown" still requires your sudo password.
 # It will do a docker compose down before it shuts down / or restarts the computer.
-
 # It also creates a cron job to start your compose when the computer starts
 
 set -e
@@ -20,7 +20,7 @@ COMPOSE_FILE="/docker/appdata/docker-compose.yml"
 cat << EOF > /usr/local/bin/power1
 #!/bin/bash
 /usr/bin/docker compose -f $COMPOSE_FILE down
-shutdown -h now
+/sbin/shutdown -h now
 EOF
 
 chmod +x /usr/local/bin/power1
@@ -29,10 +29,25 @@ chmod +x /usr/local/bin/power1
 cat << EOF > /usr/local/bin/reboot1
 #!/bin/bash
 /usr/bin/docker compose -f $COMPOSE_FILE down
-shutdown -r now
+/sbin/shutdown -r now
 EOF
 
 chmod +x /usr/local/bin/reboot1
+
+LOGGED_IN_USER=$(logname)
+
+SUDOERS_FILE="/etc/sudoers.d/power_reboot_nopasswd"
+if [[ ! -f "$SUDOERS_FILE" ]]; then
+  cat << EOF > "$SUDOERS_FILE"
+# Allow $LOGGED_IN_USER to run power1 and reboot1 without password
+$LOGGED_IN_USER ALL=(ALL) NOPASSWD: /usr/local/bin/power1, /usr/local/bin/reboot1
+EOF
+  chmod 440 "$SUDOERS_FILE"
+  echo "Created sudoers entry for power1 & reboot1 in $SUDOERS_FILE"
+else
+  echo "Sudoers entry already exists: $SUDOERS_FILE"
+fi
+
 
 # Add to crontab
 cron_line="@reboot root sleep 15 && /usr/bin/docker compose -f $COMPOSE_FILE up -d"
@@ -40,4 +55,4 @@ if ! grep -qF "$cron_line" /etc/crontab; then
   echo "$cron_line" >> /etc/crontab
 fi
 
-echo "Random_stuff/safe_shutdown_restart.sh sucessfull"
+echo "Random_stuff/safe_shutdown_restart.sh successfull"

@@ -55,8 +55,19 @@ if ! grep -qF "$cron_line" /etc/crontab; then
   echo "$cron_line" >> /etc/crontab
 fi
 
+USER_BASHRC=$(getent passwd "$LOGGED_IN_USER" | cut -d: -f6)/.bashrc
+
+bashrc_line_1='alias power1="sudo /usr/local/bin/power1"'
+if ! grep -qF "$bashrc_line_1" "$USER_BASHRC"; then
+  echo "$bashrc_line_1" >> "$USER_BASHRC"
+fi
+
+bashrc_line_2='alias reboot1="sudo /usr/local/bin/reboot1"'
+if ! grep -qF "$bashrc_line_2" "$USER_BASHRC"; then
+  echo "$bashrc_line_2" >> "$USER_BASHRC"
+fi
+
 echo "Random_stuff/safe_shutdown_restart.sh successfull"
-echo "Add the following lines to your .bashrc:"
-echo 'alias power1="sudo /usr/local/bin/power1"'
-echo 'alias reboot1="sudo /usr/local/bin/reboot1"'
-echo " but not if you did not run my terminal_plastic_operation script"
+echo "The following aliases were added to $USER_BASHRC:"
+echo "$bashrc_line_1"
+echo "$bashrc_line_2"

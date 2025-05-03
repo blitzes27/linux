@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script creates power1 and reboot1 commands and configures sudoers
+# This script creates power and reboot commands and configures sudoers
 # so that these two scripts can be run without a password.
 # A direct "shutdown" still requires your sudo password.
 # It will do a docker compose down before it shuts down / or restarts the computer.
@@ -57,12 +57,12 @@ fi
 
 USER_BASHRC=$(getent passwd "$LOGGED_IN_USER" | cut -d: -f6)/.bashrc
 
-bashrc_line_1='alias power1="sudo /usr/local/bin/power1"'
+bashrc_line_1='alias power="sudo /usr/local/bin/power1"'
 if ! grep -qF "$bashrc_line_1" "$USER_BASHRC"; then
   echo "$bashrc_line_1" >> "$USER_BASHRC"
 fi
 
-bashrc_line_2='alias reboot1="sudo /usr/local/bin/reboot1"'
+bashrc_line_2='alias reboot="sudo /usr/local/bin/reboot1"'
 if ! grep -qF "$bashrc_line_2" "$USER_BASHRC"; then
   echo "$bashrc_line_2" >> "$USER_BASHRC"
 fi

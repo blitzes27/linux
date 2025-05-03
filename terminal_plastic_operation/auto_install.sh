@@ -28,10 +28,6 @@ echo "Downloading new .bashrc from GitHub"
 curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/terminal_plastic_operation/.bashrc \
   -o "$HOME/.bashrc"
 
-echo "🔧 checking if ~/.local/bin is in your PATH"
-if ! grep -qxF 'export PATH="$HOME/.local/bin:$PATH"' "$HOME/.bashrc"; then
-  echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$HOME/.bashrc"
-fi
 
 echo "Installing bat via apt (requires sudo)"
 sudo apt install -y bat

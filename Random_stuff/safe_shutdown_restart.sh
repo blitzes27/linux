@@ -55,4 +55,20 @@ if ! grep -qF "$cron_line" /etc/crontab; then
   echo "$cron_line" >> /etc/crontab
 fi
 
+# 5) Inject aliases into ~/.bashrc after the last existing alias
+ALIASES_BLOCK=$'\n# power1 & reboot1 (auto-injected)\nalias power1="sudo /usr/local/bin/power1"\nalias reboot1="sudo /usr/local/bin/reboot1"\n'
+# Find last alias line number
+LAST_ALIAS_LINE=$(grep -n '^alias ' "$BASHRC" | tail -n1 | cut -d: -f1 || true)
+
+if [[ -n "$LAST_ALIAS_LINE" ]]; then
+  # Insert immediately after the last alias
+  sed -i "${LAST_ALIAS_LINE}a ${ALIASES_BLOCK//$'\n'/\\n}" "$BASHRC"
+  echo "Injected aliases after line $LAST_ALIAS_LINE in $BASHRC"
+else
+  # No alias lines found: append at end
+  printf "%s" "$ALIASES_BLOCK" >> "$BASHRC"
+  echo "No existing aliases found; appended aliases at end of $BASHRC"
+fi
+
+
 echo "Random_stuff/safe_shutdown_restart.sh successfull"

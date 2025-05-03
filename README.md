@@ -11,7 +11,7 @@ This is what i use to fast configure my new linux VMs with only SSH-server pre i
 ```bash
 set -e
 sudo apt update
-sudo apt ugrade -y
+sudo apt upgrade -y
 GITHUB="https://raw.githubusercontent.com/blitzes27/linux/main"
 
 curl -fsSL "$GITHUB/Random_stuff/install_stuff.sh" | sudo bash

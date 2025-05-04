@@ -9,7 +9,7 @@ set -e
 # nfs_mount_point="/mnt/data"
 # install nfs-common package
 apt update
-apt install nfs-common -y
+apt install -y nfs-common
 # Create the mount point directory if it doesn't exist
 mkdir -p $NFS_MOUNT_POINT
 # Mount the NFS share

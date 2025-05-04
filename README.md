@@ -25,7 +25,8 @@ curl -fsSL "$GITHUB/Random_stuff/safe_shutdown_restart.sh" | sudo bash
 cd ~
 curl -fsSL "$GITHUB/terminal_plastic_operation/auto_install.sh" | bash
 curl -fsSL "$GITHUB/Security/ssh_security.sh" | sudo bash
-#url -fsSL "$GITHUB/Random_stuff/nfs_share.sh" | sudo env NFS_IP="192.168.0.0" \
+curl -fsSL "$GITHUB/Security/ufw.sh" | sudo env NETWORK_ADDRESS="192.168.0.0/24" bash
+#curl -fsSL "$GITHUB/Random_stuff/nfs_share.sh" | sudo env NFS_IP="192.168.0.0" \
 #NFS_PATH="/volume9/data" NFS_MOUNT_POINT="/mnt/data" bash
 
 echo "the command 'power1' will do a docker compose down and then turn off the OS"

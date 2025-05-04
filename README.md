@@ -11,7 +11,7 @@ This is what i use to fast configure my new linux VMs with only SSH-server pre i
 ```bash
 set -e
 
-sudo sh -c 'apt update && apt upgrade -y && apt install curl -y'
+sudo sh -c 'apt update && apt upgrade -y && apt install -y curl'
 
 GITHUB="https://raw.githubusercontent.com/blitzes27/linux/main"
 

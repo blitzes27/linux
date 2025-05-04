@@ -26,7 +26,7 @@ cd ~
 curl -fsSL "$GITHUB/terminal_plastic_operation/auto_install.sh" | bash
 #curl -fsSL "$GITHUB/Security/ssh_security.sh" | sudo bash
 #curl -fsSL "$GITHUB/Security/ufw.sh" | sudo env NETWORK_ADDRESS="192.168.0.0/24" bash
-#curl -fsSL "$GITHUB/Random_stuff/change_hostname" | sudo env NEW_HOSTNAME="FROG" bash
+#curl -fsSL "$GITHUB/Random_stuff/change_hostname.sh" | sudo env NEW_HOSTNAME="FROG" bash
 #curl -fsSL "$GITHUB/Random_stuff/nfs_share.sh" | sudo env NFS_IP="192.168.0.0" \
 #NFS_PATH="/volume9/data" NFS_MOUNT_POINT="/mnt/data" bash
 

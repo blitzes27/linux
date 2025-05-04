@@ -9,8 +9,7 @@ hostnamectl set-hostname "$NEW_HOSTNAME"
 # 2) Backup /etc/hosts
 cp /etc/hosts /etc/hosts.bak.$(date +%Y%m%d%H%M%S)
 
-# 3) Ensure loopback entry for localhost remains
-#    and update (or add) the 127.0.1.1 line for the new hostname.
+# 3) update (or add) the 127.0.1.1 line for the new hostname.
 if grep -qE '^127\.0\.1\.1\b' /etc/hosts; then
   sed -i "s/^127\.0\.1\.1\b.*/127.0.1.1 $NEW_HOSTNAME/" /etc/hosts
 else

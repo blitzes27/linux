@@ -106,6 +106,22 @@ Enhances SSH server security by:
 	
 * Restarting the SSH service to apply the changes.
 
-## 8. nfs_share.sh ##
+## 8. ufw.sh ##
+Installs UFW (uncomplicated firewall)
+* Allows OpenSSH
+* Allows Port80 and 443
+* Allows the variable NETWORK_ADDRESS
+* Enables UFW
+* **ENTER YOUR VARIABLE**
 
-Installs necessary nfs-common, sets the entries required in fstab and then mounts the nfs share. Enter your own variables
+## 10. change_hostname.sh ##
+* Changes the system hostname
+* Backs up the current /etc/hosts
+* Updates /etc/hosts with ne hostname
+* **ENTER YOUR VARIABLE**
+
+## 11. nfs_share.sh ##
+
+Installs necessary nfs-common, sets the entries required in fstab and then mounts the nfs share. 
+
+**ENTER YOUR VARIABLES**

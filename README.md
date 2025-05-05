@@ -81,10 +81,10 @@ The command "compose" can be used in any folder such as:
 
 ### Creates two convenient commands: ###
 
-* **power1:** 
+* **power:** 
     - Safely shuts down the system after stopping Docker containers.
 
-* **reboot1:** 
+* **reboot:** 
     - Safely reboots the system after stopping Docker containers.
 
 * Also adds a cron job to automatically start Docker containers after reboot.

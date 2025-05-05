@@ -152,8 +152,8 @@ alias cd="z"
 alias ls="ls -a --color=auto"
 alias ls1="ls -lahtr --color=auto"
 alias cat="batcat"
-alias power1="sudo /usr/local/bin/power1"
-alias reboot1="sudo /usr/local/bin/reboot1"
+alias power="sudo /usr/local/bin/power1"
+alias reboot="sudo /usr/local/bin/reboot1"
 
 # Add this line at the end of .bashrc:
 [[ ! ${BLE_VERSION-} ]] || ble-attach

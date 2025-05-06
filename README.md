@@ -82,17 +82,17 @@ The command "compose" can be used in any folder such as:
 ### Creates two convenient commands: ###
 
 * **power:** 
-    - Safely shuts down the system after stopping Docker containers.
+    - Safely shuts down the system after stopping Docker containers by doing docker compose down.
 
 * **reboot:** 
-    - Safely reboots the system after stopping Docker containers.
+    - Safely reboots the system after stopping Docker containers by doing a docker compose down.
 
 * Also adds a cron job to automatically start Docker containers after reboot.
 
 
 ## 6. auto_install.sh ##
 
-Automates the installation of terminal enhancements, making auto completion working with many more enhancements.
+Automates the installation of terminal enhancements, making auto completion working with many more enhancements. look in terminal_plastic_operation for pics and more info.
 
 ## 7. ssh_security.sh ##
 

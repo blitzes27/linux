@@ -24,6 +24,7 @@ curl -fsSL "$GITHUB/Random_stuff/safe_shutdown_restart.sh" | sudo bash
 
 cd ~
 curl -fsSL "$GITHUB/terminal_plastic_operation/auto_install.sh" | bash
+#curl -fsSL "$GITHUB/Security/fail2ban.sh" | sudo bash
 #curl -fsSL "$GITHUB/Security/ssh_security.sh" | sudo bash
 #curl -fsSL "$GITHUB/Security/ufw.sh" | sudo env NETWORK_ADDRESS="192.168.0.0/24" bash
 #curl -fsSL "$GITHUB/Random_stuff/change_hostname.sh" | sudo env NEW_HOSTNAME="FROG" bash
@@ -94,7 +95,12 @@ The command "compose" can be used in any folder such as:
 
 Automates the installation of terminal enhancements, making auto completion working with many more enhancements. look in terminal_plastic_operation for pics and more info.
 
-## 7. ssh_security.sh ##
+## 7. fail2ban.sh ##
+Enhances SSH server security by:
+* Protects against brute-force attacks by blocking IPs
+* See script for more info also there is a documentaion link in comments.
+
+## 8. ssh_security.sh ##
 
 Enhances SSH server security by:
 
@@ -106,7 +112,7 @@ Enhances SSH server security by:
 	
 * Restarting the SSH service to apply the changes.
 
-## 8. ufw.sh ##
+## 9. ufw.sh ##
 Installs UFW (uncomplicated firewall)
 * Allows OpenSSH
 * Allows Port80 and 443

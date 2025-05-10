@@ -4,7 +4,7 @@
 apt install -y tree
 apt install -y wget
 #apt install -y net-tools iproute2
-apt install -y fail2ban
+#apt install -y fail2ban
 #apt install -y vim
 #apt install -y nano
 apt install -y unzip

@@ -12,4 +12,5 @@ apt install -y zip
 apt install -y rsync
 apt install -y git
 apt install -y nfs-common
+apt install python3-venv python3-pip
 echo "Random_stuff/install_stuff.sh sucessfull"

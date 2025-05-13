@@ -145,8 +145,6 @@ source "$OSH"/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
-eval "$(zoxide init bash)"
-alias cd="z"
 
 
 alias ls="ls -a --color=auto"
@@ -157,3 +155,5 @@ alias reboot="sudo /usr/local/bin/reboot1"
 
 # Add this line at the end of .bashrc:
 [[ ! ${BLE_VERSION-} ]] || ble-attach
+eval "$(zoxide init bash)"
+alias cd="z"

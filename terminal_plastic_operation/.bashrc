@@ -152,8 +152,7 @@ alias ls1="ls -lahtr --color=auto"
 alias cat="batcat"
 alias power="sudo /usr/local/bin/power1"
 alias reboot="sudo /usr/local/bin/reboot1"
-
+alias cd="z"
 # Add this line at the end of .bashrc:
 [[ ! ${BLE_VERSION-} ]] || ble-attach
 eval "$(zoxide init bash)"
-alias cd="z"

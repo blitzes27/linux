@@ -155,4 +155,5 @@ alias reboot="sudo /usr/local/bin/reboot1"
 alias cd="z"
 # Add this line at the end of .bashrc:
 [[ ! ${BLE_VERSION-} ]] || ble-attach
+export _ZO_DOCTOR=0
 eval "$(zoxide init bash)"

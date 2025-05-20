@@ -1,6 +1,6 @@
 #!/bin/bash
 # This script installs Docker on Ubuntu
-
+export DEBIAN_FRONTEND=noninteractive
 set -e
 # Remove conflicting packages
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do apt-get remove -y "$pkg"; done

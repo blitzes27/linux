@@ -21,7 +21,7 @@ echo "Cloning ble.sh for syntax highlighting & autosuggestions"
 git clone --recursive https://github.com/akinomyoga/ble.sh.git "$HOME/ble.sh"
 
 sudo apt update
-sudo apt install make -y
+sudo apt install -y make gawk bat
 cd "$HOME/ble.sh" && make
 
 echo "Downloading new .bashrc from GitHub"

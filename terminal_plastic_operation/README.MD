@@ -8,8 +8,6 @@ Your terminal will look amazing and it works in SSH sessions.![alt text](oh_my_b
 
 * Intelligent auto‑completion for Git, Composer, SSH, and more
 
-* Command correction (misspelled commands are auto‑fixed)
-
 * Directory jumping with zoxide (z alias)
 
 * Enhanced cat output using batcat

@@ -6,6 +6,11 @@
 # It will also download a new .bashrc file from GitHub
 # It will also install bat via apt
 # It will also check if ~/.local/bin is in your PATH
+
+# https://github.com/ohmybash/oh-my-bash
+# https://github.com/ajeetdsouza/zoxide#step-1-install-zoxide
+# https://github.com/akinomyoga/ble.sh
+
 set -euo pipefail
 
 echo "Backing up current ~/.bashrc → ~/.bashrc_before_styling"

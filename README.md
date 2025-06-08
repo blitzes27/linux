@@ -12,7 +12,7 @@ For more information, each folder or script have a readme or description in the 
 ```bash
 set -e
 
-sudo sh -c 'apt update && apt upgrade -y && apt install -y curl'
+echo 'apt update && apt upgrade -y && apt install -y curl' | sudo bash
 
 GITHUB="https://raw.githubusercontent.com/blitzes27/linux/main"
 

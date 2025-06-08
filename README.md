@@ -3,6 +3,7 @@ My favorit OS
 
 This is what i use to fast configure my new linux VMs with only SSH-server pre inslalled.
 
+For more information, each folder or script have a readme or description in the comments of the script!
 
 ### Copy and paste the command below in your terminal to auto install most scripts in this repository. Read what you will get further down ###
 

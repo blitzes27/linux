@@ -31,5 +31,5 @@ Your terminal will look amazing and it works in SSH sessions.![alt text](oh_my_b
 ### ⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️	⚠️ Dont use sudo ⚠️	⚠️ Dont use sudo ⚠️	⚠️ Dont use sudo ⚠️ ⚠️ Dont use sudo ⚠️	⚠️ Dont use sudo ⚠️ ###
 
 ```bash
-cd ~ && bash -c "$(curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/terminal_plastic_operation/auto_install.sh"
+cd ~ && curl -fsSL https://raw.githubusercontent.com/blitzes27/linux/main/terminal_plastic_operation/auto_install.sh | bash
 
